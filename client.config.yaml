@@ -1,0 +1,55 @@
+version:
+  name: velociraptor
+  version: 0.5.8
+  commit: e468f54c
+  build_time: "2021-04-11T22:09:54Z"
+Client:
+  server_urls:
+  - https://respond.falcongsec.com/
+  ca_certificate: |
+    -----BEGIN CERTIFICATE-----
+    MIIDTDCCAjSgAwIBAgIRANsniEcRUEVViHDev6E8XqowDQYJKoZIhvcNAQELBQAw
+    GjEYMBYGA1UEChMPVmVsb2NpcmFwdG9yIENBMB4XDTIxMDQxNTA3MzYzOVoXDTMx
+    MDQxMzA3MzYzOVowGjEYMBYGA1UEChMPVmVsb2NpcmFwdG9yIENBMIIBIjANBgkq
+    hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyMIuBxggY71Pgoy+SfA6VWryxx+m3sfN
+    F/pXWWzOrgA1Av10y2dOL/yDzhF9cEcfvsJXMRXKQHO/6kO6PAk+PEXWc7NxD2a3
+    aMhtz4EhgcNLFe3F+fUtRuZOU7Q+iP5BHVfFsZjnyoan05ZUbb0nZgOss0pupJIV
+    Ma0biRsYpgr4xo80glrY1nQhPDUYbEVLX+EyKA3yCrJLlVtVudQW0J+6GCwcrqC5
+    hDvPrzeY7+eLUwHLe2RGWT5ERJdzkWpKwezZqxQRMeeZhvud1SrehoOUFej6Y8lk
+    NqHJZe9ByCCOGAXkNhqKZCTqIZkX/pXOplMz687WL3Ga7X0coHIy/QIDAQABo4GM
+    MIGJMA4GA1UdDwEB/wQEAwICpDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUH
+    AwIwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUj3aX9T8oMPi2QcW5ZApttY7x
+    YPowKAYDVR0RBCEwH4IdVmVsb2NpcmFwdG9yX2NhLnZlbG9jaWRleC5jb20wDQYJ
+    KoZIhvcNAQELBQADggEBAKzv3hwP9MrW6NGWYFC0P0g6uejtW58MfZC9JoPV3S4o
+    64I1VWExX71s08owPRW6YZU+AfLgEWNNb3qMsA+S5UlWGIkJU4T6V9KthRwjYN12
+    2r1ME8G1V3r0drKpmhekYfGUdAMAfc47CDa/I1XftXovHSwABze+3mJ6Sr2L84Lq
+    TFKUtMGaxKTYYt+dsc5WFrsRnQse7KJLAebKwR9dtaMXrrp3XhiaVIE4hcMRBE1J
+    451JKHoTEq9gSWiFwzER7lbJnlnAAhoZStTRWOi/+WyKo3DO9mbw1MCeU3gi8Jno
+    yoHjcq/OKW2QQ05IAhOR+/HWId/tjzxVyAiRsB5MMQQ=
+    -----END CERTIFICATE-----
+  nonce: QLjaD96JOAc=
+  writeback_darwin: /etc/fade.writeback.yaml
+  writeback_linux: /etc/fade.writeback.yaml
+  writeback_windows: $ProgramFiles\FADE\fade.writeback.yaml
+  tempdir_windows: $ProgramFiles\FADE\Tools
+  max_poll: 60
+  windows_installer:
+    service_name: FADE
+    install_path: $ProgramFiles\FADE\fade.exe
+    service_description: Falcon Guard FADE service
+  darwin_installer:
+    service_name: com.falconguard.fade
+    install_path: /usr/local/sbin/fade
+  version:
+    name: velociraptor
+    version: 0.5.8
+    commit: e468f54c
+    build_time: "2021-04-11T22:09:54Z"
+  pinned_server_name: VelociraptorServer
+  max_upload_size: 5242880
+  local_buffer:
+    memory_size: 52428800
+    disk_size: 1073741824
+    filename_linux: /var/tmp/FADE_Buffer.bin
+    filename_windows: $TEMP/FADE_Buffer.bin
+    filename_darwin: /var/tmp/FADE_Buffer.bin
