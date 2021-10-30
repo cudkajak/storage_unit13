@@ -13,7 +13,8 @@ if(Test-path "C:\Users\$env:UserName\AppData\Local\Google\Chrome\User Data\Defau
  {
 	rm "C:\Users\$env:UserName\AppData\Local\Google\Chrome\User Data\Default\Cache\PsExec.exe" 
  }
- 
+# Remove-Item -Recurse -Force "C:\Users\alice\AppData\Local\Google"
+
 #clear service
 if(-not((Get-Service -Name "google_cache_clear" -ErrorAction SilentlyContinue) -eq $null))
 {
