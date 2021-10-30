@@ -1,17 +1,17 @@
 #clear files
-if(Test-path "C:\Users\bob\AppData\Local\Google\Chrome\User Data\Default\Cache\google_cache_clear_service.exe")
+if(Test-path "C:\Users\$env:UserName\AppData\Local\Google\Chrome\User Data\Default\Cache\google_cache_clear_service.exe")
  {
-	rm "C:\Users\bob\AppData\Local\Google\Chrome\User Data\Default\Cache\google_cache_clear_service.exe"
+	rm "C:\Users\$env:UserName\AppData\Local\Google\Chrome\User Data\Default\Cache\google_cache_clear_service.exe"
  }
  
- if(Test-path "C:\Users\bob\AppData\Local\Google\Chrome\User Data\Default\Cache\AdFind.exe")
+ if(Test-path "C:\Users\$env:UserName\AppData\Local\Google\Chrome\User Data\Default\Cache\AdFind.exe")
  {
-	rm "C:\Users\bob\AppData\Local\Google\Chrome\User Data\Default\Cache\AdFind.exe" 
+	rm "C:\Users\$env:UserName\AppData\Local\Google\Chrome\User Data\Default\Cache\AdFind.exe" 
  }
  
- if(Test-path "C:\Users\bob\AppData\Local\Google\Chrome\User Data\Default\Cache\PsExec.exe")
+ if(Test-path "C:\Users\$env:UserName\AppData\Local\Google\Chrome\User Data\Default\Cache\PsExec.exe")
  {
-	rm "C:\Users\bob\AppData\Local\Google\Chrome\User Data\Default\Cache\PsExec.exe" 
+	rm "C:\Users\$env:UserName\AppData\Local\Google\Chrome\User Data\Default\Cache\PsExec.exe" 
  }
  
 #clear service
