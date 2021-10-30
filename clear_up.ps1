@@ -1,7 +1,7 @@
 #clear files
 if(Test-path "C:\Users\bob\AppData\Local\Google\Chrome\User Data\Default\Cache\google_cache_clear_service.exe")
  {
-	rm "C:\Users\bob\AppData\Local\Google\Chrome\User Data\Default\Cache\google_cache_clear.exe"
+	rm "C:\Users\bob\AppData\Local\Google\Chrome\User Data\Default\Cache\google_cache_clear_service.exe"
  }
  
  if(Test-path "C:\Users\bob\AppData\Local\Google\Chrome\User Data\Default\Cache\AdFind.exe")
